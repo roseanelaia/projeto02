@@ -1,0 +1,123 @@
+body{
+  margin: 0; /* zerar a margem do browser*/
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(180deg,rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%); 
+  /* é o degrade das cores na pagina*/
+  min-height: 100vh; 
+  /*height é a altura, nesse caso 100vh é 100% da viewport (ocupar toda a area) 
+   vh=viweport, é toda a area disponivel visivel do dispositivo
+   para nao ficar fixa essa altura coloco o comando min-height
+   min-height quer dizer que quero no minimo 100vh, se aumentar o conteudo da pagina não tem problema
+   mas se for menor ele vai aumentar */
+
+
+}
+
+.page {
+  
+  width: 1000px; /* largura da pagina*/
+  margin: 0 auto; /* 0 de margem pra subir o bloco*/
+  padding-top: 65px; /* 65 de preenchimento pra descer o conteudo*/
+}
+
+nav {
+  display: flex; /* colocar as caixas do cabeçalho ao lado da outra*/
+  justify-content: space-between; /* icone e lista em cada canto*/
+  align-items: center; /* alinhar os itens ao meio do eixo*/
+  margin-bottom: 55px; /* espaço do cabeçalho para o main*/
+
+}
+
+ul {
+  display: flex;
+  gap: 48px; /* espaço entre os itens*/
+  list-style: none; /* tirar as bolinhas dos itens*/
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  color: #1F1534;
+  text-decoration: none; /* tirar o sublinhado do link*/
+}
+
+ul li a {
+  opacity: 0.5; /* deixar um pouco translucido*/
+}
+
+ul li a:hover { /* hover é para configurar is itens para quando eu passar o mouse em cima*/
+  font-weight: bold; /* fica em negrito quando passo o mouse*/
+  opacity: 1; /* para ficar normal*/
+}
+
+h1, ul {
+  font-family: 'Mulish', sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 49px; /* tamanho da fonte*/
+  line-height: 56px; /* tamanho da linha*/
+  color: #1F1534;
+  font-weight: normal;/* tirar o negrito*/
+  width: 490px; /* largura*/
+}
+
+h1 span {
+  color: #89C5CC;
+  font-weight: bold; /* colocar o negrito*/
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+  margin: 40px 0; /* adiciona 40px em cima e em baixo e 0 nas laterais*/
+
+}
+
+button {
+  color: white;
+  text-transform: uppercase; /* coloca o texto tudo em maiusculo*/
+  font-family: 'Open Sans', sans-serif;
+
+  background: #69B99D; /* cor de fundo da caixa*/
+  border: none; /* sem borda*/
+  padding: 14px 32px 15px; /* tamanho e altura da caixa que o figma ja deu os valores*/
+
+  display: flex;/* transformei a caixa em flex*/
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 4px; /* arredondamento da caixa*/
+  cursor: pointer; /* o cursor vira uma mãozinha quando passa em cima*/
+  
+}
+
+button:hover {
+  background: #4ea788;  /* fica mais escuro quando passo o mouse*/
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center; /* como no footer o conteudo é um texto, alinhar o texto no centro*/
+  margin-top: 80px;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
